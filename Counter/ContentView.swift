@@ -22,11 +22,17 @@ enum CounterAPIError: Error, LocalizedError {
 
 // MARK: - API Service
 final class CounterAPIService: APIService {
+    private let fetchCount: Int
+    
+    init(fetchCount: Int = 42) {
+        self.fetchCount = fetchCount
+    }
+    
     func fetchCount() async throws -> Int {
         // 実際のAPIリクエストをここに実装
         // 例として仮のデータを返す
         try await Task.sleep(nanoseconds: 500_000_000) // 模擬的な遅延
-        return 42 // サーバーから取得した仮のデータ
+        return fetchCount // サーバーから取得した仮のデータ
     }
 
     func updateCount(newCount: Int) async throws {
@@ -79,10 +85,12 @@ final class CounterViewState: ObservableObject {
         count = 0
     }
     
+    @MainActor
     func startLoading() {
         isLoading = true
     }
     
+    @MainActor
     func stopLoading() {
         isLoading = false
     }
@@ -117,12 +125,12 @@ final class CounterIntent {
         guard let viewState = viewState else { return }
         Task {
             do {
-                viewState.startLoading()
+                await viewState.startLoading()
                 let count = try await apiService.fetchCount()
-                viewState.stopLoading()
+                await viewState.stopLoading()
                 await viewState.updateCount(newCount: count)
             } catch {
-                viewState.stopLoading()
+                await viewState.stopLoading()
                 viewState.updateError(errorMessage: "Failed to fetch count: \(error.localizedDescription)")
             }
         }

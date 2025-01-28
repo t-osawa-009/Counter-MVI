@@ -14,19 +14,11 @@
 			remoteGlobalIDString = CA6A9E392D3FA720000E4E50;
 			remoteInfo = Counter;
 		};
-		CA6A9E552D3FA723000E4E50 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CA6A9E322D3FA720000E4E50 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CA6A9E392D3FA720000E4E50;
-			remoteInfo = Counter;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		CA6A9E3A2D3FA720000E4E50 /* Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Counter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA6A9E4A2D3FA723000E4E50 /* CounterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CounterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA6A9E542D3FA723000E4E50 /* CounterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CounterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -38,11 +30,6 @@
 		CA6A9E4D2D3FA723000E4E50 /* CounterTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = CounterTests;
-			sourceTree = "<group>";
-		};
-		CA6A9E572D3FA723000E4E50 /* CounterUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = CounterUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -62,13 +49,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CA6A9E512D3FA723000E4E50 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -77,7 +57,6 @@
 			children = (
 				CA6A9E3C2D3FA720000E4E50 /* Counter */,
 				CA6A9E4D2D3FA723000E4E50 /* CounterTests */,
-				CA6A9E572D3FA723000E4E50 /* CounterUITests */,
 				CA6A9E3B2D3FA720000E4E50 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,7 +66,6 @@
 			children = (
 				CA6A9E3A2D3FA720000E4E50 /* Counter.app */,
 				CA6A9E4A2D3FA723000E4E50 /* CounterTests.xctest */,
-				CA6A9E542D3FA723000E4E50 /* CounterUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,29 +118,6 @@
 			productReference = CA6A9E4A2D3FA723000E4E50 /* CounterTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		CA6A9E532D3FA723000E4E50 /* CounterUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CA6A9E642D3FA723000E4E50 /* Build configuration list for PBXNativeTarget "CounterUITests" */;
-			buildPhases = (
-				CA6A9E502D3FA723000E4E50 /* Sources */,
-				CA6A9E512D3FA723000E4E50 /* Frameworks */,
-				CA6A9E522D3FA723000E4E50 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CA6A9E562D3FA723000E4E50 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				CA6A9E572D3FA723000E4E50 /* CounterUITests */,
-			);
-			name = CounterUITests;
-			packageProductDependencies = (
-			);
-			productName = CounterUITests;
-			productReference = CA6A9E542D3FA723000E4E50 /* CounterUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -177,10 +132,6 @@
 						CreatedOnToolsVersion = 16.2;
 					};
 					CA6A9E492D3FA723000E4E50 = {
-						CreatedOnToolsVersion = 16.2;
-						TestTargetID = CA6A9E392D3FA720000E4E50;
-					};
-					CA6A9E532D3FA723000E4E50 = {
 						CreatedOnToolsVersion = 16.2;
 						TestTargetID = CA6A9E392D3FA720000E4E50;
 					};
@@ -202,7 +153,6 @@
 			targets = (
 				CA6A9E392D3FA720000E4E50 /* Counter */,
 				CA6A9E492D3FA723000E4E50 /* CounterTests */,
-				CA6A9E532D3FA723000E4E50 /* CounterUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -216,13 +166,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		CA6A9E482D3FA723000E4E50 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CA6A9E522D3FA723000E4E50 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -246,13 +189,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CA6A9E502D3FA723000E4E50 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -260,11 +196,6 @@
 			isa = PBXTargetDependency;
 			target = CA6A9E392D3FA720000E4E50 /* Counter */;
 			targetProxy = CA6A9E4B2D3FA723000E4E50 /* PBXContainerItemProxy */;
-		};
-		CA6A9E562D3FA723000E4E50 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CA6A9E392D3FA720000E4E50 /* Counter */;
-			targetProxy = CA6A9E552D3FA723000E4E50 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -486,40 +417,6 @@
 			};
 			name = Release;
 		};
-		CA6A9E652D3FA723000E4E50 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NRKVC4ZX66;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "t-osawa.CounterUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Counter;
-			};
-			name = Debug;
-		};
-		CA6A9E662D3FA723000E4E50 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NRKVC4ZX66;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "t-osawa.CounterUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Counter;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -546,15 +443,6 @@
 			buildConfigurations = (
 				CA6A9E622D3FA723000E4E50 /* Debug */,
 				CA6A9E632D3FA723000E4E50 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CA6A9E642D3FA723000E4E50 /* Build configuration list for PBXNativeTarget "CounterUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CA6A9E652D3FA723000E4E50 /* Debug */,
-				CA6A9E662D3FA723000E4E50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
